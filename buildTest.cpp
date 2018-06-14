@@ -2,6 +2,9 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
+
+
+
 using namespace std;
 using namespace cv;
 
@@ -22,7 +25,7 @@ int main(int argc,char **argv)
     Canny(edgeImage, edgeImage, 1, 2);
 
     imshow("Canny image",edgeImage);
-
+    cout << "Canny image" << endl;
     threshold(image, thresholdImage, 110, 100.0, CV_THRESH_BINARY); 
 
     imshow("Threshold image",thresholdImage);
